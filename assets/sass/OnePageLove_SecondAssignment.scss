@@ -1,0 +1,187 @@
+// Test variable that I intend to reuse
+@import "_partial_example.scss";
+
+$border: none;
+
+body {
+  background-color: $background-color;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.grid {
+  background: $background-color;
+  border: $border;
+  margin-top: -20px;
+  //height: $height;
+}
+
+.row {
+  border: $border;
+  //height: 25%;
+
+}
+
+a {
+  :hover {
+    transform: scale(0.9);
+    transition: 0.5s ease;
+  }
+}
+
+.col-md-1 {
+  border: $border;
+  padding-bottom: 150px;
+  padding-right: -100px;
+  //height: 25%;
+  :hover {
+    transform: none;
+  }
+  p {
+    text-transform: uppercase;
+    padding-top: 8px;
+    padding-left: 10px;
+    font-size: 16px;
+    opacity: 0.8;
+    color: #fff;
+  }
+}
+
+.material-icons {
+  bottom: 10px;
+  right: 15px;
+  position: absolute;
+  font-size: 36px;
+  //font-weight: 100;
+  opacity: 0.5;
+  color: white;
+}
+
+ul {
+  text-align: center;
+  //font-size: 22px;
+}
+
+#text {
+  background-color: $background-color;
+  p {
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    padding-top: 100px;
+    margin-bottom: -122px;
+    font-size: 20px;
+    font-weight: 100;
+  }
+  #signature {
+    font-size: 13px;
+    margin-top: 38px;
+    font-weight: 400;
+  }
+}
+
+#red{
+  background-color: red;
+}
+
+#pink {
+  background-color: pink;
+}
+
+#purple {
+  background-color: purple;
+}
+
+#deep_purple {
+  background-color: #673ab7;
+}
+
+#indigo {
+  background-color: indigo;
+}
+
+#blue {
+  background-color: blue;
+}
+
+#light_blue {
+  background-color: #03a9f4
+}
+
+#cyan {
+  background-color: cyan;
+}
+
+#teal {
+  background-color: teal;
+}
+
+#green {
+  background-color: green;
+}
+
+#light_green {
+  background-color: #8bc34a
+}
+
+#lime {
+  background-color: lime;
+}
+
+#yellow {
+  background-color: yellow;
+}
+
+#amber {
+  background-color: #ffc107;
+}
+
+#orange {
+  background-color: orange;
+}
+
+#deep_orange {
+  background-color: #ff5722
+}
+
+#brown {
+  background-color: brown;
+}
+
+#grey {
+  background-color: grey;
+}
+
+#blue_grey {
+  background-color: #607d8b;
+}
+
+#light_green, #lime, #yellow, #amber, #orange, #grey {
+  p {
+    color: $background-color;
+  }
+}
+
+
+@media (min-width: 768px){
+  .row .col-md-1,
+  .row .col-sm-1,
+  .row .col-lg-1  {
+    @include size;
+  }
+}
+
+@media (min-width: 992px) {
+  .row .col-md-1,
+  .row .col-sm-1,
+  .row .col-lg-1 {
+    @include size;
+  }
+}
+
+@media (min-width: 1200px) {
+  .row .col-md-1,
+  .row .col-sm-1,
+  .row .col-lg-1 {
+    @include size;
+  }
+}
